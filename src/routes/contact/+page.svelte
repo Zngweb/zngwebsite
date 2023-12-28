@@ -92,6 +92,7 @@
                 <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
                 <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
             </div>
+            <input type="hidden" name="form-name" value="contact">
 
             <button type="submit" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Send Message</button>
         </form>
