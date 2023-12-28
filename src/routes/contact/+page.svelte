@@ -76,7 +76,7 @@
     <!-- Example: Replace the content of the div below with your contact form -->
     <div class="max-w-3xl mx-auto">
         <!-- Your contact form goes here -->
-        <form name="contact" netlify>
+        <form name="contact" method="POST" netlify>
             <!-- Form fields go here -->
             <div class="mb-4">
                 <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
