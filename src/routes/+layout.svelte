@@ -1,8 +1,5 @@
-<script context="module">
-	export const prerender = true;
-</script>
 <script>
-
+export const prerender = true;
 	import '../tailwind.css';
 	import Footer from '../components/Footer.svelte';
 	import { SITE_TITLE } from '$lib/siteConfig';

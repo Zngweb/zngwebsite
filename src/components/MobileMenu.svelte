@@ -64,7 +64,7 @@
 				<a
 					class="flex w-auto pb-4"
 					on:click={() => setTimeout(() => (isOpen = false), 300)}
-					href="/blog">Blog</a
+					href="/about">About</a
 				>
 			</li>
 			<li
@@ -74,7 +74,7 @@
 				<a
 					class="flex w-auto pb-4"
 					on:click={() => setTimeout(() => (isOpen = false), 300)}
-					href="/about">About</a
+					href="/services">Services</a
 				>
 			</li>
 			<li
@@ -84,7 +84,7 @@
 				<a
 					class="flex w-auto pb-4"
 					on:click={() => setTimeout(() => (isOpen = false), 300)}
-					href="https://github.com/swyxio/swyxkit">GitHub</a
+					href="/contact">Contact Us</a
 				>
 			</li>
 			<!-- <li
