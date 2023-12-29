@@ -1,20 +1,31 @@
 import adapter from '@sveltejs/adapter-netlify';
-export default {
-	kit: {
-		// default options are shown
-		adapter: adapter({
-			// if true, will create a Netlify Edge Function rather
-			// than using standard Node-based functions
-			edge: false,
 
-			// if true, will split your app into multiple functions
-			// instead of creating a single one for the entire app.
-			// if `edge` is true, this option cannot be used
-			split: false,
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	kit: {
+		adapter: adapter(),
+		prerender: {
 			crawl: true,
-			enabled: true,
-			force: true,
-			pages: ['*'],
-		})
-	}
+			entries: ['*'],
+			handleHttpError: async ({ request, error }) => {
+				if (error.status === 404) {
+				  // Handle 404 errors, for example, by redirecting to a custom error page
+				  return {
+					status: 404,
+					body: 'Not Found',
+				  };
+				}
+		
+				// For other errors, you can customize the response accordingly
+				return {
+				  status: 500,
+				  body: 'Internal Server Error',
+				};
+			  },
+		},
+		
+		
+	},
+	
 };
+export default config;

@@ -6,6 +6,21 @@
   
     // technically this is a slightly different type because it doesn't have 'content' but we'll let it slide
     /** @type {import('$lib/types').ContentItem[]} */
+
+
+    const handleSubmit = (e) => {
+		e.preventDefault()
+		let contactform = document.getElementById('contactform');
+		let formData = new FormData(contactform);
+		fetch('/', {
+			method: 'POST',
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: new URLSearchParams(formData).toString()
+		}).then(() => console.log('Form successfully submitted')).catch((error) =>
+			alert(error))
+	}
+
+    
     $: items = data.items;
 </script>
 
@@ -24,77 +39,57 @@
     <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
+<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8 ">
     <div class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 dark:border-gray-700 sm:px-8">
         <!-- Left Column for Text -->
-        <div class="lg:w-1/2 lg:pr-8">
+        <div class="lg:w-1/2 lg:pr-8 bg-main p-8 text-white">
             <h1 class="font-medium lowercases pb-10 text-5xl leading-none md:text-6xl lg:text-6xl">
-                <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
-                    <span class="relative text-white skew-y-3"> contact</span>
-                </span> us.
+               
+                     contact us.
             </h1>
             <h2 class="max-w-xl pb-10 text-xl leading-9 text-secondary">
                 Reach out to Zngweb | Transformative Web Development. We're here to assist you!
             </h2>
         </div>
         <!-- Right Column for Image -->
-        <div class="lg:w-1/2 transform rounded-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 p-1 transition-all hover:scale-[1.01]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl" width="550" height="550" viewBox="0 0 200 200">
-                <!-- Contact Icon -->
-                <!-- Example: An envelope for contact -->
-                <rect x="80" y="40" width="40" height="80" fill="#f39c12" />
-                <rect x="70" y="60" width="60" height="50" fill="#ecf0f1" />
-                <line x1="70" y1="110" x2="130" y2="110" stroke="#2c3e50" stroke-width="5" />
-            </svg>
+        <div class="lg:w-1/2 p-8  ">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-5xl font-medium ">
+                    <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
+                        <span class="relative text-white skew-y-3">get in</span>
+                    </span> touch.
+                </h2>
+                <p class="pb-10 text-xl leading-9 text-secondary">Have questions or want to discuss a project? Drop us a message below!</p>
+            </div>
+        
+            <!-- Contact Form (Add your form component or embed your form code here) -->
+            <!-- Example: Replace the content of the div below with your contact form -->
+            <div class="max-w-3xl mx-auto">
+                <!-- Your contact form goes here -->
+                <form id="contactform" on:submit={handleSubmit} name="contact" method="POST" data-netlify="true" class="max-w-md mx-auto p-6 bg-white rounded-md shadow-md">
+                    <div class="mb-4">
+                      <label for="name" class="block text-gray-600 text-sm font-semibold mb-1">Your Name:</label>
+                      <input type="text" id="name" name="name" class="w-full border border-gray-300 p-2 rounded-md">
+                    </div>
+                  
+                    <div class="mb-4">
+                      <label for="email" class="block text-gray-600 text-sm font-semibold mb-1">Your Email:</label>
+                      <input type="email" id="email" name="email" class="w-full border border-gray-300 p-2 rounded-md">
+                    </div>
+                  
+                    <div class="mb-4">
+                      <label for="message" class="block text-gray-600 text-sm font-semibold mb-1">Message:</label>
+                      <textarea id="message" name="message" class="w-full border border-gray-300 p-2 rounded-md"></textarea>
+                    </div>
+                  
+                    <div class="mb-6">
+                      <button type="submit" class="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600">Send</button>
+                    </div>
+                  
+                    <input type="hidden" name="form-name" value="contact">
+                  </form>
+                  
+            </div>
         </div>
     </div>
 </div>
-
-<!-- Contact Section -->
-<section class="container mx-auto px-4 py-20">
-    <div class="flex items-center justify-center mb-4">
-        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 200 200">
-            <!-- Background Circle -->
-            <circle cx="100" cy="100" r="100" fill="#EF4444" />
-            <!-- Envelope Icon -->
-            <rect x="80" y="60" width="40" height="40" fill="#ecf0f1" />
-            <line x1="80" y1="100" x2="120" y2="100" stroke="#2c3e50" stroke-width="5" />
-            <line x1="80" y1="120" x2="120" y2="120" stroke="#2c3e50" stroke-width="5" />
-        </svg>
-    </div>
-
-    <div class="text-center">
-        <h2 class="text-4xl md:text-5xl font-medium ">
-            <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
-                <span class="relative text-white skew-y-3">get in</span>
-            </span> touch.
-        </h2>
-        <p class="pb-10 text-xl leading-9 text-secondary">Have questions or want to discuss a project? Drop us a message below!</p>
-    </div>
-
-    <!-- Contact Form (Add your form component or embed your form code here) -->
-    <!-- Example: Replace the content of the div below with your contact form -->
-    <div class="max-w-3xl mx-auto">
-        <!-- Your contact form goes here -->
-        <form name="contact" method="POST" netlify>
-            <!-- Form fields go here -->
-            <div class="mb-4">
-                <label for="name" class="block text-sm font-medium text-gray-700">Your Name</label>
-                <input type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md" />
-            </div>
-
-            <div class="mb-4">
-                <label for="email" class="block text-sm font-medium text-gray-700">Your Email</label>
-                <input type="email" id="email" name="email" class="mt-1 p-2 w-full border rounded-md" />
-            </div>
-
-            <div class="mb-4">
-                <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
-                <textarea id="message" name="message" rows="4" class="mt-1 p-2 w-full border rounded-md"></textarea>
-            </div>
-            <input type="hidden" name="form-name" value="contact">
-
-            <button type="submit" class="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600">Send Message</button>
-        </form>
-    </div>
-</section>

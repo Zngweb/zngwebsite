@@ -1,5 +1,4 @@
 <script>
-  	export const prerender = true;
     import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION, DEFAULT_OG_IMAGE } from '$lib/siteConfig';
   
     /** @type {import('./$types').PageData} */

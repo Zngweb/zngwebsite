@@ -1,10 +1,7 @@
 import { c as create_ssr_component, e as escape, d as add_attribute } from "../../../chunks/ssr.js";
-import { a as SITE_URL, S as SITE_TITLE, D as DEFAULT_OG_IMAGE } from "../../../chunks/siteConfig.js";
+import { S as SITE_URL, a as SITE_TITLE, D as DEFAULT_OG_IMAGE } from "../../../chunks/siteConfig.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  const prerender = true;
   let { data } = $$props;
-  if ($$props.prerender === void 0 && $$bindings.prerender && prerender !== void 0)
-    $$bindings.prerender(prerender);
   if ($$props.data === void 0 && $$bindings.data && data !== void 0)
     $$bindings.data(data);
   data.items;

@@ -1,5 +1,5 @@
 import { c as create_ssr_component, e as escape, d as add_attribute, f as each } from "../../../chunks/ssr.js";
-import { a as SITE_URL, S as SITE_TITLE, D as DEFAULT_OG_IMAGE } from "../../../chunks/siteConfig.js";
+import { S as SITE_URL, a as SITE_TITLE, D as DEFAULT_OG_IMAGE } from "../../../chunks/siteConfig.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let keyFactors = [
     {

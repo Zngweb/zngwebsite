@@ -1,5 +1,4 @@
 <script>
-export const prerender = true;
 	import '../tailwind.css';
 	import Footer from '../components/Footer.svelte';
 	import { SITE_TITLE } from '$lib/siteConfig';
@@ -8,12 +7,12 @@ export const prerender = true;
 </script>
 
 <svelte:head>
-	<link
+	<!-- <link
 		rel="alternate"
 		type="application/rss+xml"
 		title={'RSS Feed for ' + SITE_TITLE}
 		href="/rss.xml"
-	/>
+	/> -->
 </svelte:head>
 
 <Header/>
