@@ -1,25 +1,5 @@
 <script>
 	import NavLink from './NavLink.svelte';
-	let isDark = false;
-	if (typeof localStorage !== 'undefined') {
-		if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			isDark = true;
-		}
-	}
-	function toggleDarkMode() {
-		if (isDark) {
-			document.documentElement.classList.remove('dark');
-			localStorage.theme = 'light';
-			isDark = false;
-		} else {
-			document.documentElement.classList.add('dark');
-			localStorage.theme = 'dark';
-			isDark = true;
-		}
-	}
 </script>
 <div class="hidden lg:flex lg:items-center">
 <nav
