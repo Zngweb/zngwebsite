@@ -1,4 +1,5 @@
+import banner from '$lib/assets/zngweb-banner-1024x577.png';
 export const SITE_URL = 'https://zngweb.com';
-export const SITE_TITLE = 'Zngweb | Transformative Web Development';
-export const SITE_DESCRIPTION = "Elevate your online success with our expert web development services. As a leading IT company, we specialize in crafting tailored websites that blend cutting-edge technology, user-centric design, and seamless functionality. Partner with us to enhance your digital presence through innovative web solutions.";
-export const DEFAULT_OG_IMAGE ='';
+export const SITE_TITLE = 'Zngweb';
+export const SITE_DESCRIPTION = "As a leading digital agency, we specialize in expert WordPress solutions. Elevate your online presence with our skilled team, providing tailored web development, design, and optimization services. Transform your digital landscape with our trusted expertise.";
+export const DEFAULT_OG_IMAGE = '';

@@ -22,73 +22,89 @@
   </script>
   
   <svelte:head>
-    <title>{SITE_TITLE} - About Us</title>
-    <link rel="canonical" href={`${SITE_URL}/about`} />
-    <meta property="og:url" content={`${SITE_URL}/about`} />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content={`${SITE_TITLE} - About Us`} />
-    <meta name="Description" content={`Learn more about ${SITE_TITLE} and our 12 years of expertise in web development.`} />
-    <meta property="og:description" content={`Learn more about ${SITE_TITLE} and our 12 years of expertise in web development.`} />
-    <meta property="og:image" content={DEFAULT_OG_IMAGE} />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={`${SITE_TITLE} - About Us`} />
-    <meta name="twitter:description" content={`Learn more about ${SITE_TITLE} and our 12 years of expertise in web development.`} />
-    <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
-  </svelte:head>
-  <div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
-    <div class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 dark:border-gray-700 sm:px-8">
-      <!-- Left Column for Text -->
-      <div class="lg:w-1/2 lg:pr-8">
-        <h1 class="font-medium lowercases pb-10 text-5xl leading-none md:text-6xl lg:text-6xl">
-          
+    
+   <title>About | {SITE_TITLE} </title>
+  <meta name="Description" content={SITE_DESCRIPTION} />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <link rel="canonical" href={`${SITE_URL}/about`} />
+	<meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+	<meta property="og:title" content={`About | ${SITE_TITLE}`} />
+	<meta property="og:description" content={SITE_DESCRIPTION} />
+  <meta property="og:url" content={`${SITE_URL}/about`} />
+  <meta property="og:site_name" content={SITE_TITLE}/>
+	<meta property="og:image" content={DEFAULT_OG_IMAGE} />
+  <meta property="og:image:secure_url" content={DEFAULT_OG_IMAGE} />
+  <meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="577" />
+<meta property="og:image:alt" content="zngweb" />
+<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content={`About | ${SITE_TITLE}`}  />
+	<meta name="twitter:description" content={SITE_DESCRIPTION} />
+	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:label1" content="Time to read" />
+<meta name="twitter:data1" content="2 minutes" />
   
-          <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  about</span></span> us.
-      
-        </h1>
-        
-    <p class="text-gray-700 pb-10">At Zngweb, we firmly believe in empowering every business with a robust online presence. Our commitment is reflected in the exceptional web development and design services we offer to small and mid-sized enterprises, aiding in their growth. Passion drives our team, and we are dedicated to providing our clients with bespoke solutions that blend creativity and technical excellence at an enterprise level.</p>
+</svelte:head>
 
-    <p class="text-gray-700 pb-10">Comprising a small yet proficient team, our experienced and talented individuals collaborate to craft distinctive websites that not only boast visually appealing designs but also excel in performance. Taking the time to comprehend our clients' businesses and unique requirements, we deliver tailor-made solutions that align with their objectives and surpass expectations.</p>
+<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
+  <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200 dark:border-gray-700 sm:px-8">
+    <!-- Left Column for Text -->
+    <div class="lg:w-1/2 lg:pr-8">
+      <h1 class="font-medium lowercases pb-6 text-3xl md:text-4xl lg:text-5xl leading-none lg:leading-tight">
+        <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
+          <span class="relative text-white skew-y-3">about</span>
+        </span> us.
+      </h1>
+
+      <p class="text-gray-700 pb-6">
+        At Zngweb, we firmly believe in empowering every business with a robust online presence. Our commitment is reflected in the exceptional web development and design services we offer to small and mid-sized enterprises, aiding in their growth. Passion drives our team, and we are dedicated to providing our clients with bespoke solutions that blend creativity and technical excellence at an enterprise level.
+      </p>
+
+      
+    <p class="text-gray-700 pb-6">Comprising a small yet proficient team, our experienced and talented individuals collaborate to craft distinctive websites that not only boast visually appealing designs but also excel in performance. Taking the time to comprehend our clients' businesses and unique requirements, we deliver tailor-made solutions that align with their objectives and surpass expectations.</p>
     
-    <p class="text-gray-700 pb-10">Setting ourselves apart with meticulous attention to detail and an unwavering commitment to excellence, we engage closely with our clients throughout the entire process – from the initial consultation to the final website launch. This ensures that every aspect of their vision is seamlessly integrated into their online presence.</p>
+    <p class="text-gray-700 pb-6">Setting ourselves apart with meticulous attention to detail and an unwavering commitment to excellence, we engage closely with our clients throughout the entire process – from the initial consultation to the final website launch. This ensures that every aspect of their vision is seamlessly integrated into their online presence.</p>
     
-    <p class="text-gray-700 pb-10">Our pride in workmanship fuels our constant quest for innovation. Staying abreast of the latest industry trends and technologies, we offer cutting-edge solutions that position our clients ahead of the competition.</p>
+    <p class="text-gray-700 pb-6">Our pride in workmanship fuels our constant quest for innovation. Staying abreast of the latest industry trends and technologies, we offer cutting-edge solutions that position our clients ahead of the competition.</p>
     
-    <p class="text-gray-700 pb-10">Whether you seek to revamp an existing website, build one from scratch, or require ongoing support and maintenance, Zngweb is here to assist. More than just a web development agency, we consider ourselves a strategic partner in your business's journey to success."</p>
-      </div>
-      <!-- Right Column for Image -->
-      <div class="lg:w-1/2 transform rounded-xl bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-1 transition-all hover:scale-[1.01] max-h-screen">
-        <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl"  width="550"  viewBox="0 0 200 200" >
-            <!-- Head -->
-            <circle cx="100" cy="60" r="30" fill="#FFD700" />
-          
-            <!-- Body -->
-            <rect x="90" y="60" width="20" height="40" fill="#3498db" />
-          
-            <!-- Eyes -->
-            <circle cx="95" cy="50" r="3" fill="#000" />
-            <circle cx="105" cy="50" r="3" fill="#000" />
-          
-            <!-- Mouth -->
-            <path d="M 95 65 Q 100 70 105 65" fill="none" stroke="#000" stroke-width="2" />
-          
-            <!-- Hair -->
-            <rect x="90" y="45" width="20" height="15" fill="#000" />
-          
-            <!-- Shirt -->
-            <rect x="85" y="100" width="30" height="30" fill="#e74c3c" />
-          
-            <!-- Legs -->
-            <rect x="90" y="130" width="10" height="20" fill="#2ecc71" />
-            <rect x="100" y="130" width="10" height="20" fill="#2ecc71" />
-          </svg>
-          
+    <p class="text-gray-700 pb-6">Whether you seek to revamp an existing website, build one from scratch, or require ongoing support and maintenance, Zngweb is here to assist. More than just a web development agency, we consider ourselves a strategic partner in your business's journey to success."</p>
+    </div>
+
+    <!-- Right Column for Image -->
+    <div class="lg:w-1/2 transform rounded-xl bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-1 transition-all hover:scale-[1.01] max-h-screen">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl w-full h-auto" viewBox="0 0 200 200">
+          <!-- Head -->
+          <circle cx="100" cy="60" r="30" fill="#FFD700" />
         
+          <!-- Body -->
+          <rect x="90" y="60" width="20" height="40" fill="#3498db" />
         
-    
-      </div>
+          <!-- Eyes -->
+          <circle cx="95" cy="50" r="3" fill="#000" />
+          <circle cx="105" cy="50" r="3" fill="#000" />
+        
+          <!-- Mouth -->
+          <path d="M 95 65 Q 100 70 105 65" fill="none" stroke="#000" stroke-width="2" />
+        
+          <!-- Hair -->
+          <rect x="90" y="45" width="20" height="15" fill="#000" />
+        
+          <!-- Shirt -->
+          <rect x="85" y="100" width="30" height="30" fill="#e74c3c" />
+        
+          <!-- Legs -->
+          <rect x="90" y="130" width="10" height="20" fill="#2ecc71" />
+          <rect x="100" y="130" width="10" height="20" fill="#2ecc71" />
+      
+        
+      </svg>
     </div>
   </div>
+</div>
+
 
   <section class="container mx-auto py-8">
 
@@ -119,13 +135,14 @@
   </section>
 
 <!-- Section 2 -->
-<div class="flex flex-col lg:flex-roww-full items-center  justify-center px-4 py-16 border-gray-200 dark:border-gray-700 sm:px-8">
+<div class="flex flex-col lg:flex-row w-full items-center justify-center px-4 py-8 lg:py-16 border-gray-200 dark:border-gray-700 sm:px-8">
   <!-- Left Column for Text -->
   <div class="lg:w-1/2 lg:pr-8">
-    <h2 class="font-medium lowercases pb-10 text-4xl leading-none md:text-5xl lg:text-5xl">
-      our 
-      
-      <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  mission</span></span>
+    <h2 class="font-medium lowercases pb-6 text-4xl leading-none md:text-5xl lg:text-5xl">
+      our
+      <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
+        <span class="relative text-white skew-y-3">mission</span>
+      </span>
     </h2>
     <p class="text-gray-700 pb-10">
       At Zngweb, we embark on a mission to redefine the digital frontier through the delivery of avant-garde web development solutions. Our unwavering commitment is rooted in surpassing expectations, nurturing innovation, and cultivating enduring partnerships with our esteemed clients.
@@ -173,3 +190,5 @@
     </div>
   </div>
 </section>
+
+

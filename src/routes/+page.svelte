@@ -15,45 +15,55 @@
 </script>
 
 <svelte:head>
-	<title>{SITE_TITLE}</title>
-	<link rel="canonical" href={SITE_URL} />
-	<meta property="og:url" content={SITE_URL} />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content={SITE_TITLE} />
-	<meta name="Description" content={SITE_DESCRIPTION} />
+	<title>{SITE_TITLE} | A digital agency expert on WordPress</title>
+  <meta name="Description" content={SITE_DESCRIPTION} />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <link rel="canonical" href={SITE_URL} />
+	<meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+	<meta property="og:title" content={`${SITE_TITLE} | A digital agency expert on WordPress `} />
 	<meta property="og:description" content={SITE_DESCRIPTION} />
+  <meta property="og:url" content={SITE_URL} />
+  <meta property="og:site_name" content={SITE_TITLE}/>
 	<meta property="og:image" content={DEFAULT_OG_IMAGE} />
+  <meta property="og:image:secure_url" content={DEFAULT_OG_IMAGE} />
+  <meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="577" />
+<meta property="og:image:alt" content="zngweb" />
+<meta property="og:image:type" content="image/png" />
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:title" content={SITE_TITLE} />
+  <meta name="twitter:title" content={`${SITE_TITLE} | A digital agency expert on WordPress `}  />
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
 	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:label1" content="Time to read" />
+<meta name="twitter:data1" content="2 minutes" />
+  
 </svelte:head>
-
 <div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
-  <div class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 dark:border-gray-700 sm:px-8">
+  <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200 dark:border-gray-700 sm:px-8">
     <!-- Left Column for Text -->
     <div class="lg:w-1/2 lg:pr-8">
-      <h1 class="font-medium lowercases pb-10 text-5xl leading-none md:text-6xl lg:text-6xl">
+      <h1 class="font-medium lowercases pb-6 text-3xl md:text-4xl lg:text-5xl leading-none lg:leading-tight">
         a
-
-        <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">innovative</span></span>
-        digital agency expert on wordpress.
+        <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
+          <span class="relative text-white skew-y-3">innovative</span>
+        </span> digital agency expert on WordPress.
       </h1>
-      <h2 class="max-w-xl pb-10 text-xl leading-9 text-secondary">
+      <h2 class="max-w-xl pb-6 text-lg lg:text-xl leading-7 lg:leading-9 text-secondary">
         We specialize in delivering exceptional web development and design services tailored for small and mid-sized businesses, facilitating their growth through a harmonious blend of creativity and expertise. Our commitment is to provide enterprise-quality solutions that elevate your online presence and business success <span class="text-red">.</span>
       </h2>
     </div>
     <!-- Right Column for Image -->
     <div class="lg:w-1/2 transform rounded-xl bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-1 transition-all hover:scale-[1.01]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl" width="550" height="550" viewBox="0 0 200 200">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl w-full h-auto" viewBox="0 0 200 200">
         <!-- Computer Monitor -->
         <rect x="40" y="40" width="120" height="80" fill="#2D2D2D" />
         <rect x="50" y="50" width="100" height="60" fill="#1E1E1E" />
-      
-      
+
         <!-- Keyboard -->
         <rect x="60" y="130" width="80" height="10" fill="#2D2D2D" />
-      
+
         <!-- Code Text -->
         <text x="55" y="55" font-family="Courier New" font-size="4" fill="#FEF08A">{`console.log("Hello, World!");`}</text>
         <text x="55" y="65" font-family="Courier New" font-size="4" fill="#2ecc71">{`var x = 10;`}</text>
@@ -61,10 +71,6 @@
         <text x="60" y="85" font-family="Courier New" font-size="4" fill="#FF3E29">{`  console.log("x is greater than 5");`}</text>
         <text x="55" y="95" font-family="Courier New" font-size="4" fill="#FF3E29">{`}`}</text>
       </svg>
-      
-      
-      
-  
     </div>
   </div>
 </div>

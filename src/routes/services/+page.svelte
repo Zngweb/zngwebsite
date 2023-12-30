@@ -10,45 +10,63 @@
 </script>
 
 <svelte:head>
-    <title>{SITE_TITLE} - Services</title>
-    <link rel="canonical" href={`${SITE_URL}/services`} />
-    <meta property="og:url" content={`${SITE_URL}/services`} />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content={`${SITE_TITLE} - Services`} />
-    <meta name="Description" content={`Explore the services offered by ${SITE_TITLE}.`} />
-    <meta property="og:description" content={`Explore the services offered by ${SITE_TITLE}.`} />
-    <meta property="og:image" content={DEFAULT_OG_IMAGE} />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content={`${SITE_TITLE} - Services`} />
-    <meta name="twitter:description" content={`Explore the services offered by ${SITE_TITLE}.`} />
-    <meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+    
+   <title>Services | {SITE_TITLE} </title>
+  <meta name="Description" content={SITE_DESCRIPTION} />
+  <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+  <link rel="canonical" href={`${SITE_URL}/contact`} />
+	<meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+	<meta property="og:title" content={`Services | ${SITE_TITLE}`} />
+	<meta property="og:description" content={SITE_DESCRIPTION} />
+  <meta property="og:url" content={`${SITE_URL}/contact`} />
+  <meta property="og:site_name" content={SITE_TITLE}/>
+	<meta property="og:image" content={DEFAULT_OG_IMAGE} />
+  <meta property="og:image:secure_url" content={DEFAULT_OG_IMAGE} />
+  <meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="577" />
+<meta property="og:image:alt" content="zngweb" />
+<meta property="og:image:type" content="image/png" />
+	<meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={`Services | ${SITE_TITLE}`}  />
+    <meta name="twitter:description" content={SITE_DESCRIPTION} />
+	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+  <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:label1" content="Time to read" />
+<meta name="twitter:data1" content="2 minutes" />
+  
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
-    <div class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 dark:border-gray-700 sm:px-8">
-        <!-- Left Column for Text -->
-        <div class="lg:w-1/2 lg:pr-8">
-            <h1 class="font-medium lowercases pb-10 text-5xl leading-none md:text-6xl lg:text-6xl">
-                <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
-                    <span class="relative text-white skew-y-3"> our</span>
-                </span> services.
-            </h1>
-            <h2 class="max-w-xl pb-10 text-xl leading-9 text-secondary">
-                Explore the range of services offered by Zngweb | Transformative Web Development. From web design to development, we've got you covered.
-            </h2>
-        </div>
-        <!-- Right Column for Image -->
-        <div class="lg:w-1/2 transform rounded-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 p-1 transition-all hover:scale-[1.01]">
-            <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl" width="550" height="550" viewBox="0 0 200 200">
-                <!-- Service Icon (You can replace this with your own service-related illustration) -->
-                <!-- Example: A wrench and gear for maintenance services -->
-                <rect x="80" y="40" width="40" height="80" fill="#f39c12" />
-                <circle cx="100" cy="120" r="20" fill="#3498db" />
-                <path d="M 90 150 Q 100 160 110 150" fill="none" stroke="#2ecc71" stroke-width="2" />
-            </svg>
-        </div>
+  <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200 dark:border-gray-700 sm:px-8">
+    <!-- Left Column for Text -->
+    <div class="lg:w-1/2 lg:pr-8">
+      <h1 class="font-medium lowercases pb-4 text-3xl lg:text-5xl leading-none md:text-4xl">
+        <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
+          <span class="relative text-white skew-y-3">our</span>
+        </span> services.
+      </h1>
+      <h2 class="max-w-xl pb-4 text-lg lg:text-xl leading-7 lg:leading-9 text-secondary">
+        Explore the range of services offered by Zngweb | Transformative Web Development. From web design to development, we've got you covered.
+      </h2>
+      <p class="text-gray-700 pb-10">
+        At Zngweb, we embark on a mission to redefine the digital frontier through the delivery of avant-garde web development solutions. Our unwavering commitment is rooted in surpassing expectations, nurturing innovation, and cultivating enduring partnerships with our esteemed clients.
+      </p>
     </div>
+    <!-- Right Column for Image -->
+    <div class="lg:w-1/2 w-full transform rounded-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 p-1 transition-all hover:scale-[1.01]">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl w-full h-auto"  viewBox="0 0 200 200">
+        <!-- Service Icon (You can replace this with your own service-related illustration) -->
+        <!-- Example: A wrench and gear for maintenance services -->
+        <rect x="80" y="40" width="40" height="80" fill="#f39c12" />
+        <circle cx="100" cy="120" r="20" fill="#3498db" />
+        <path d="M 90 150 Q 100 160 110 150" fill="none" stroke="#2ecc71" stroke-width="2" />
+      </svg>
+    </div>
+  </div>
 </div>
+
+
 
 <!-- Add more sections or content as needed -->
 
