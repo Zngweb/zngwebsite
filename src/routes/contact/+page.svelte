@@ -50,11 +50,20 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:label1" content="Time to read" />
 	<meta name="twitter:data1" content="2 minutes" />
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTJB966L7N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LTJB966L7N');
+</script>
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
 	<div
-		class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 dark:border-gray-700 sm:px-8"
+		class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 sm:px-8"
 	>
 		<!-- Left Column for Text -->
 		<div class="lg:w-1/2 lg:pr-8 bg-main p-8 text-white">

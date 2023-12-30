@@ -46,11 +46,19 @@
   <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:label1" content="Time to read" />
 <meta name="twitter:data1" content="2 minutes" />
-  
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTJB966L7N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LTJB966L7N');
+</script>
 </svelte:head>
 
 <div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
-  <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200 dark:border-gray-700 sm:px-8">
+  <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200  sm:px-8">
     <!-- Left Column for Text -->
     <div class="lg:w-1/2 lg:pr-8">
       <h1 class="font-medium lowercases pb-6 text-3xl md:text-4xl lg:text-5xl leading-none lg:leading-tight">
@@ -135,7 +143,7 @@
   </section>
 
 <!-- Section 2 -->
-<div class="flex flex-col lg:flex-row w-full items-center justify-center px-4 py-8 lg:py-16 border-gray-200 dark:border-gray-700 sm:px-8">
+<div class="flex flex-col lg:flex-row w-full items-center justify-center px-4 py-8 lg:py-16 border-gray-200  sm:px-8">
   <!-- Left Column for Text -->
   <div class="lg:w-1/2 lg:pr-8">
     <h2 class="font-medium lowercases pb-6 text-4xl leading-none md:text-5xl lg:text-5xl">
@@ -181,7 +189,7 @@
       team can transform your business vision into tangible reality.
     </p>
     <div class="relative">
-      <a href="/contact" class="flex sm:inline-flex rounded-md px-10 py-4 font-semibold shadow-sm hover:scale-105 focus-visible:outline focus-visible:outline-2 bg-main text-white hover:bg-yellow-200 dark:hover:bg-yellow-800 focus-visible:outline-offset-2 focus-visible:outline-white ring-red-400 transition-all hover:ring-2 dark:bg-yellow-800 w-full text-center md:w-auto transition justify-center">
+      <a href="/contact" class="flex sm:inline-flex rounded-md px-10 py-4 font-semibold shadow-sm hover:scale-105 focus-visible:outline focus-visible:outline-2 bg-main text-white hover:bg-yellow-200  focus-visible:outline-offset-2 focus-visible:outline-white ring-red-400 transition-all hover:ring-2  w-full text-center md:w-auto transition justify-center">
         <span>Let's chat</span>
         <svg class="h-6 w-6 ml-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
           <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>

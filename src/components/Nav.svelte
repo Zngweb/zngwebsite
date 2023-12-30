@@ -12,8 +12,8 @@
 	<div class="flex items-center space-x-4">
 		<a
 			href="/contact"
-			class="px-8 py-2 ml-1 flex hover:bg-yellow-200 dark:hover:bg-yellow-800 text-white items-center justify-center  bg-main ring-red-400
-			transition-all hover:ring-2 dark:bg-yellow-800"
+			class="px-8 py-2 ml-1 flex hover:bg-yellow-200 text-white items-center justify-center  bg-main ring-red-400
+			transition-all hover:ring-2"
 	
 		>
 		Hire US

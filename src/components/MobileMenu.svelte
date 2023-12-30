@@ -27,24 +27,24 @@
 		  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
 		</svg>
 	  {:else}
-		<svg class="absolute h-5 w-5 text-gray-900 dark:text-gray-100" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" data-hide="true">
+		<svg class="absolute h-5 w-5 text-gray-900 " viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" shape-rendering="geometricPrecision" data-hide="true">
 		  <path d="M18 6L6 18" />
 		  <path d="M6 6l12 12" />
 		</svg>
 	  {/if}
 	</button>
 	{#if isOpen}
-	  <ul class="menu absolute flex flex-col bg-gray-50 text-2xl uppercase dark:bg-gray-900" class:menuRendered={isMenuRendered}>
-		<li class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100" style="transition-delay: 150ms;">
+	  <ul class="menu absolute flex flex-col bg-gray-50 text-2xl uppercase " class:menuRendered={isMenuRendered}>
+		<li class="border-b border-gray-300 font-semibold text-gray-900  " style="transition-delay: 150ms;">
 		  <a class="flex w-auto pb-4" on:click={() => setTimeout(() => (isOpen = false), 300)} href="/">Home</a>
 		</li>
-		<li class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100" style="transition-delay: 250ms;">
+		<li class="border-b border-gray-300 font-semibold text-gray-900  " style="transition-delay: 250ms;">
 		  <a class="flex w-auto pb-4" on:click={() => setTimeout(() => (isOpen = false), 300)} href="/about">About</a>
 		</li>
-		<li class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100" style="transition-delay: 350ms;">
+		<li class="border-b border-gray-300 font-semibold text-gray-900  " style="transition-delay: 350ms;">
 		  <a class="flex w-auto pb-4" on:click={() => setTimeout(() => (isOpen = false), 300)} href="/services">Services</a>
 		</li>
-		<li class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100" style="transition-delay: 400ms;">
+		<li class="border-b border-gray-300 font-semibold text-gray-900  " style="transition-delay: 400ms;">
 		  <a class="flex w-auto pb-4" on:click={() => setTimeout(() => (isOpen = false), 300)} href="/contact">Contact Us</a>
 		</li>
 	  </ul>
