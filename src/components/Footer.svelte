@@ -4,7 +4,8 @@
   
 	export let absolute = false;
   </script>
-  
+
+
   <footer
 	class="pb-6 {absolute ? 'absolute w-full bottom-0 bg-blueGray-800' : 'relative'}"
   >
@@ -16,7 +17,7 @@
 			class="text-sm text-blueGray-500 font-semibold py-1 text-center md:text-left"
 		  >
 		
-			Copyright © {date} <a class="" href="/">Zngweb</a>
+			Copyright © {date} <a class="text-primary" href="/">Zngweb</a>
 		  </div>
 		</div>
 		<div class="w-full md:w-8/12 px-4">
@@ -24,7 +25,7 @@
 			<li>
 			  <a
 				href="/"
-				class="text-gray-800 hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
 			  >
 				Home
 			  </a>
@@ -32,7 +33,7 @@
 			<li>
 			  <a
 				href="/about"
-				class="text-gray-800 hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
 			  >
 				About Us
 			  </a>
@@ -40,7 +41,7 @@
 			<li>
 			  <a
 				href="/services"
-				class="text-gray-800 hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
 			  >
 				Services
 			  </a>
@@ -48,7 +49,7 @@
 			<li>
 			  <a
 				href="/contact"
-				class="text-gray-800 hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
 			  >
 				Contact
 			  </a>

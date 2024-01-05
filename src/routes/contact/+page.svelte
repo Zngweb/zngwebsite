@@ -4,22 +4,25 @@
 	/** @type {import('./$types').PageData} */
 	export let data;
 
+	let successMessage = '';
 	// technically this is a slightly different type because it doesn't have 'content' but we'll let it slide
 	/** @type {import('$lib/types').ContentItem[]} */
 
 	const handleSubmit = (e) => {
-		e.preventDefault();
-		let contactform = document.getElementById('contactform');
-		let formData = new FormData(contactform);
-		fetch('/contact', {
-			method: 'POST',
-			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-			body: new URLSearchParams(formData).toString()
-		})
-			.then(() => console.log('Form successfully submitted'))
-			.catch((error) => alert(error));
-	};
-
+    e.preventDefault();
+    let contactform = document.getElementById('contactform');
+    let formData = new FormData(contactform);
+    fetch('/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        console.log('Form successfully submitted');
+		successMessage = 'Form submitted successfully!';
+      })
+      .catch((error) => alert(error));
+  };
 	$: items = data.items;
 </script>
 
@@ -66,86 +69,118 @@
 		class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 sm:px-8"
 	>
 		<!-- Left Column for Text -->
-		<div class="lg:w-1/2 lg:pr-8 bg-main p-8 text-white">
-			<h1 class="font-medium lowercases pb-10 text-5xl leading-none md:text-6xl lg:text-6xl">
-				contact us.
-			</h1>
-			<h2 class="max-w-xl pb-10 text-xl leading-9 text-secondary">
-				Reach out to Zngweb | Transformative Web Development. We're here to assist you!
+		<div class="lg:w-1/2 lg:pr-8 bg-white p-8 text-secondary border-l-2 border-t-2 border-b-2 border-primary">
+			
+			<h2 class="font-medium lowercases text-secondary text-3xl md:text-2xl lg:text-2xl leading-none lg:leading-tight text-accent">
+				Contact Us
 			</h2>
+			<h1 class="font-medium lowercases py-6 text-3xl md:text-4xl lg:text-4xl leading-none lg:leading-tight ">Embark on a collaborative journey with us <span class="text-primary">!</span></h1>
+			<p class="text-gray-700 pb-6">
+				Whether you're exploring ideas, weighing options, or ready to dive in, we're eager to hear about your goals. Let's craft something remarkable together!
+			</p>
+
+			<h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent ">Connect with us using the form  or drop us an email at</span> <a href="mailto:contact@zngweb.com" class="text-accent hover:text-accent-hover">
+					
+					
+				contact@zngweb.com
+			</a>.</h3>
+			
 		</div>
+		
 		<!-- Right Column for Image -->
-		<div class="lg:w-1/2 p-8">
-			<div class="text-center">
-				<h2 class="text-4xl md:text-5xl font-medium">
-					<span
-						class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
+		<div class="lg:w-1/2">
+			
+<div class="max-w-md mx-auto p-6 border-r-2 border-t-2 border-b-2 border-primary bg-white  shadow-md">
+	{#if successMessage}
+	<div class="text-center">
+		<h2 class="text-4xl md:text-2xl font-medium">
+		  <span
+			class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-green-500"
+		  >
+			<span class="relative text-white skew-y-3">Thank you</span>
+		  </span> for reaching out!
+		</h2>
+		<p class="pb-10 text-xl leading-9 text-colorary">
+		  We appreciate your message and will get back to you soon.
+		</p>
+	  </div>
+{/if}
+			<!-- Your contact form goes here -->
+			<form
+				id="contactform"
+				on:submit={handleSubmit}
+				name="contact"
+				method="POST"
+				data-netlify="true"
+				
+			>
+				<div class="mb-4">
+					<label for="name" class="block text-gray-600 text-sm font-semibold mb-1">Your Name:</label>
+					<input
+						type="text"
+						id="name"
+						name="name"
+						class="w-full border border-gray-300 p-2 rounded-md"
+					/>
+				</div>
+		
+				<div class="mb-4">
+					<label for="email" class="block text-gray-600 text-sm font-semibold mb-1">Your Email:</label>
+					<input
+						type="email"
+						id="email"
+						name="email"
+						class="w-full border border-gray-300 p-2 rounded-md"
+					/>
+				</div>
+		
+				<div class="mb-4">
+					<label for="message" class="block text-gray-600 text-sm font-semibold mb-1">Message:</label>
+					<textarea
+						id="message"
+						name="message"
+						class="w-full border border-gray-300 p-2 rounded-md"
+					></textarea>
+				</div>
+		
+				<div class="mb-4">
+					<label for="how-heard" class="block text-gray-600 text-sm font-semibold mb-1">How did you hear about zngweb?</label>
+					<select
+						id="how-heard"
+						name="how-heard"
+						class="w-full border border-gray-300 p-2 rounded-md"
 					>
-						<span class="relative text-white skew-y-3">get in</span>
-					</span> touch.
-				</h2>
-				<p class="pb-10 text-xl leading-9 text-secondary">
-					Have questions or want to discuss a project? Drop us a message below!
-				</p>
-			</div>
+						<option value="social-media">Social Media</option>
+						<option value="search-engine">Search Engine</option>
+						<option value="referral">Referral</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+		
+				<div class="mb-4">
+					<label for="subject" class="block text-gray-600 text-sm font-semibold mb-1">Subject:</label>
+					<select
+						id="subject"
+						name="subject"
+						class="w-full border border-gray-300 p-2 rounded-md"
+					>
+						<option value="general-inquiry">General Inquiry</option>
+						<option value="proposal-request">Request for Proposal</option>
+					</select>
+				</div>
+		
+				<div class="mb-6">
+					<button
+						type="submit"
+						class="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
+					>Send</button>
+				</div>
+		
+				<input type="hidden" name="form-name" value="contact" />
+			</form>
+			<!-- Success message section -->
 
-			<!-- Contact Form (Add your form component or embed your form code here) -->
-			<!-- Example: Replace the content of the div below with your contact form -->
-			<div class="max-w-3xl mx-auto">
-				<!-- Your contact form goes here -->
-				<form
-					id="contactform"
-					on:submit={handleSubmit}
-					name="contact"
-					method="POST"
-					data-netlify="true"
-					class="max-w-md mx-auto p-6 bg-white rounded-md shadow-md"
-				>
-					<div class="mb-4">
-						<label for="name" class="block text-gray-600 text-sm font-semibold mb-1"
-							>Your Name:</label
-						>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							class="w-full border border-gray-300 p-2 rounded-md"
-						/>
-					</div>
-
-					<div class="mb-4">
-						<label for="email" class="block text-gray-600 text-sm font-semibold mb-1"
-							>Your Email:</label
-						>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							class="w-full border border-gray-300 p-2 rounded-md"
-						/>
-					</div>
-
-					<div class="mb-4">
-						<label for="message" class="block text-gray-600 text-sm font-semibold mb-1"
-							>Message:</label
-						>
-						<textarea
-							id="message"
-							name="message"
-							class="w-full border border-gray-300 p-2 rounded-md"
-						></textarea>
-					</div>
-
-					<div class="mb-6">
-						<button
-							type="submit"
-							class="w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600">Send</button
-						>
-					</div>
-
-					<input type="hidden" name="form-name" value="contact" />
-				</form>
-			</div>
 		</div>
+	</div>
 	</div>
 </div>

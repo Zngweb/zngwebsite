@@ -17,7 +17,7 @@
 
 <Header/>
 
-<main class="flex flex-col justify-center bg-gray-50   ">
+<main class="flex flex-col justify-center ">
 	<slot />
 </main>
 <Footer/>

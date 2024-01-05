@@ -1,5 +1,6 @@
 <script>
     import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION, DEFAULT_OG_IMAGE } from '$lib/siteConfig';
+    import heroabout from '$lib/assets/zngweb-hero-about.png';
 
     let keyFactors = [
     { id: 1, title: 'Effective', description: 'Our small team comprises experienced and talented individuals dedicated to delivering top-notch web solutions.' },
@@ -82,33 +83,9 @@
     </div>
 
     <!-- Right Column for Image -->
-    <div class="lg:w-1/2 transform rounded-xl bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 p-1 transition-all hover:scale-[1.01] max-h-screen">
-      <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl w-full h-auto" viewBox="0 0 200 200">
-          <!-- Head -->
-          <circle cx="100" cy="60" r="30" fill="#FFD700" />
-        
-          <!-- Body -->
-          <rect x="90" y="60" width="20" height="40" fill="#3498db" />
-        
-          <!-- Eyes -->
-          <circle cx="95" cy="50" r="3" fill="#000" />
-          <circle cx="105" cy="50" r="3" fill="#000" />
-        
-          <!-- Mouth -->
-          <path d="M 95 65 Q 100 70 105 65" fill="none" stroke="#000" stroke-width="2" />
-        
-          <!-- Hair -->
-          <rect x="90" y="45" width="20" height="15" fill="#000" />
-        
-          <!-- Shirt -->
-          <rect x="85" y="100" width="30" height="30" fill="#e74c3c" />
-        
-          <!-- Legs -->
-          <rect x="90" y="130" width="10" height="20" fill="#2ecc71" />
-          <rect x="100" y="130" width="10" height="20" fill="#2ecc71" />
-      
-        
-      </svg>
+    <div class="lg:w-1/2 transform  ">
+      <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
+      <img src={heroabout} alt="zngweb hero section" class=" w-full h-auto">
     </div>
   </div>
 </div>
@@ -124,7 +101,7 @@
           <span class="relative text-white skew-y-3">  key </span>
         </span> success factors
       </h2>
-      <p class="pb-10 text-xl leading-9 text-secondary"></p>
+      <p class="pb-10 text-xl leading-9 text-colorary"></p>
     </div>
   
     <!-- Key Factors Section -->
@@ -175,28 +152,25 @@
 </div>
 
 
-<section class="flex items-center  justify-center bg-gray-100 ">
-  <div class="w-full max-w-2xl rounded-xl py-16  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-primary mx-auto ">
-    <h3 class="text-4xl lg:text-5xl">
-      Is there a project within your scope of focus?
-      <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  Brief us in</span></span> 
-
-    </h3>
-    <p class="text-xl lg:text-2xl max-w-2xl mx-auto text-secondary leading-relaxed">
-      Let us establish a connection to explore how the expertise of the
-
-      <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  zngweb</span></span> 
-      team can transform your business vision into tangible reality.
-    </p>
-    <div class="relative">
-      <a href="/contact" class="flex sm:inline-flex rounded-md px-10 py-4 font-semibold shadow-sm hover:scale-105 focus-visible:outline focus-visible:outline-2 bg-main text-white hover:bg-yellow-200  focus-visible:outline-offset-2 focus-visible:outline-white ring-red-400 transition-all hover:ring-2  w-full text-center md:w-auto transition justify-center">
-        <span>Let's chat</span>
-        <svg class="h-6 w-6 ml-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
-
+<section class="flex items-center  justify-center bg-white">
+	<div class="w-full max-w-2xl rounded-xl py-20  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-secondary mx-auto ">
+	  <h2 class=" border-primary text-gray-700 text-4xl md:text-5xl font-medium leading-tight max-w-2xl mb-6 mb-0">
+		<span class="text-accent lowercase">     Is there a project within your scope of focus?</span><span class="text-primary">Brief us in</span> 
+	  </h2>
+	  <p class="text-xl lg:text-2xl max-w-2xl mx-auto text-colorary leading-relaxed">
+		Let us establish a connection to explore how the expertise of the
+  
+		<span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  zngweb</span></span> 
+		team can transform your business vision into tangible reality.
+	  </p>
+	  <div class="relative">
+		<a href="/contact" class="flex sm:inline-flex rounded-md px-10 py-4 font-medium shadow-sm hover:scale-105 focus-visible:outline focus-visible:outline-2 bg-primary text-white hover:bg-secondary focus-visible:outline-offset-2 focus-visible:outline-white ring-white transition-all hover:ring-2  w-full text-center md:w-auto transition justify-center">
+		  <span>Let's chat</span>
+		  <svg class="h-6 w-6 ml-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+		  </svg>
+		</a>
+	  </div>
+	</div>
+  </section>
 

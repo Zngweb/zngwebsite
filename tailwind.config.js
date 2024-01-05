@@ -82,8 +82,11 @@ module.exports = {
     }),
     extend: {
       colors: {
-        'main': '#FF3E29',
-        'second': '#47019d',
+        'primary':'#FA4229',
+        'secondary':'#2C3E50',
+        'accent-color':'#FF6F61',
+        'bgcolor':'#F5F5F5',
+        'text-color':'#333333'
       },
       minHeight: {
         "screen-75": "75vh",

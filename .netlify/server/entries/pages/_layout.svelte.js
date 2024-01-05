@@ -20,7 +20,7 @@ const NavLink = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   isActive = $page.url.pathname === $$props.href;
   $$unsubscribe_page();
   return `<a class="${[
-    "hidden p-1 text-gray-800 transition-all hover:bg-main hover:text-white sm:px-3 sm:py-2 md:inline-block",
+    "hidden p-1 text-gray-800 transition-all hover:bg-primary hover:text-white sm:px-3 sm:py-2 md:inline-block",
     isActive ? "font-semibold" : ""
   ].join(" ").trim()}"${add_attribute("href", href, 0)}><span class="capsize">${slots.default ? slots.default({}) : ``}</span></a>`;
 });
@@ -41,7 +41,7 @@ const Nav = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     default: () => {
       return `Services`;
     }
-  })} <div class="flex items-center space-x-4" data-svelte-h="svelte-1dp7p1c"><a href="/contact" class="px-8 py-2 ml-1 flex hover:bg-yellow-200 dark:hover:bg-yellow-800 text-white items-center justify-center bg-main ring-red-400 transition-all hover:ring-2 dark:bg-yellow-800">Hire US</a></div></nav></div>`;
+  })} <div class="flex items-center space-x-4" data-svelte-h="svelte-1dp7p1c"><a href="/contact" class="px-8 py-2 ml-1 flex hover:bg-secondary dark:hover:bg-yellow-800 text-white items-center justify-center bg-primary ring-red-400 transition-all hover:ring-2 dark:bg-yellow-800">Hire US</a></div></nav></div>`;
 });
 const css = {
   code: ".menu.svelte-19potqi.svelte-19potqi.svelte-19potqi{padding:0 28px 0 4px;margin:0;padding-top:24px;width:100%;height:100vh;z-index:1000;opacity:0;left:0;transition:opacity 300ms ease, transform 300ms ease}.menu.svelte-19potqi li.svelte-19potqi.svelte-19potqi{transform:translateX(-16px);opacity:0;transition:opacity 300ms ease, transform 300ms ease, width 300ms ease, border-color 300ms ease;width:0px;white-space:nowrap}.menuRendered.svelte-19potqi.svelte-19potqi.svelte-19potqi{opacity:1}.menuRendered.svelte-19potqi li.svelte-19potqi.svelte-19potqi{transform:translateX(0);opacity:1}.menu.svelte-19potqi>.svelte-19potqi+.svelte-19potqi{margin-top:24px}@keyframes svelte-19potqi-grow{0%{height:0px}100%{height:24px}}",

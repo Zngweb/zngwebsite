@@ -1,6 +1,6 @@
 <script>
     import { SITE_URL, SITE_TITLE, SITE_DESCRIPTION, DEFAULT_OG_IMAGE } from '$lib/siteConfig';
-  
+    import hero1 from '$lib/assets/hero-image.png';
     /** @type {import('./$types').PageData} */
     export let data;
   
@@ -54,7 +54,7 @@
           <span class="relative text-white skew-y-3">our</span>
         </span> services.
       </h1>
-      <h2 class="max-w-xl pb-4 text-lg lg:text-xl leading-7 lg:leading-9 text-secondary">
+      <h2 class="max-w-xl pb-4 text-lg lg:text-xl leading-7 lg:leading-9 text-colorary">
         Explore the range of services offered by Zngweb | Transformative Web Development. From web design to development, we've got you covered.
       </h2>
       <p class="text-gray-700 pb-10">
@@ -62,14 +62,10 @@
       </p>
     </div>
     <!-- Right Column for Image -->
-    <div class="lg:w-1/2 w-full transform rounded-xl bg-gradient-to-r from-green-400 via-blue-500 to-purple-500 p-1 transition-all hover:scale-[1.01]">
-      <svg xmlns="http://www.w3.org/2000/svg" class="bg-white rounded-xl w-full h-auto"  viewBox="0 0 200 200">
-        <!-- Service Icon (You can replace this with your own service-related illustration) -->
-        <!-- Example: A wrench and gear for maintenance services -->
-        <rect x="80" y="40" width="40" height="80" fill="#f39c12" />
-        <circle cx="100" cy="120" r="20" fill="#3498db" />
-        <path d="M 90 150 Q 100 160 110 150" fill="none" stroke="#2ecc71" stroke-width="2" />
-      </svg>
+    
+    <div class="lg:w-1/2 transform  ">
+      <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
+      <img src={hero1} alt="zngweb hero section" class=" w-full h-auto">
     </div>
   </div>
 </div>
@@ -96,13 +92,13 @@
           <span class="relative text-white skew-y-3">custom</span>
         </span> web development and design
       </h2>
-      <p class="pb-10 text-xl leading-9 text-secondary">Specialized services tailored for small and mid-sized businesses, fostering growth through creativity and expertise.</p>
+      <p class="pb-10 text-xl leading-9 text-colorary">Specialized services tailored for small and mid-sized businesses, fostering growth through creativity and expertise.</p>
     </div>
   
     <div class="flex flex-wrap -mx-4">
       <!-- Web Development -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+        <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="75" fill="#EF4444" />
             <rect x="70" y="60" width="60" height="80" fill="#ecf0f1" />
@@ -138,7 +134,7 @@
   
       <!-- Design Services -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+        <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="75" fill="#EF4444" />
             <rect x="50" y="50" width="100" height="100" fill="#ecf0f1" />
@@ -173,7 +169,7 @@
   
       <!-- WordPress Expertise -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+        <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="75" fill="#EF4444" />
             <rect x="70" y="60" width="60" height="80" fill="#ecf0f1" />
@@ -207,7 +203,7 @@
   
       <!-- Business Growth -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+        <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
           <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
             <circle cx="100" cy="100" r="75" fill="#EF4444" />
             <rect x="50" y="50" width="100" height="100" fill="#ecf0f1" />
@@ -264,7 +260,7 @@
               <span class="relative text-white skew-y-3">Professional</span>
           </span> Consulting
       </h2>
-      <p class="pb-10 text-xl leading-9 text-secondary">
+      <p class="pb-10 text-xl leading-9 text-colorary">
           Elevate your business strategy with our professional consulting services. We provide tailored guidance and solutions to help you overcome challenges, optimize processes, and achieve your business objectives.
       </p>
   </div>
@@ -272,7 +268,7 @@
   <div class="flex flex-wrap -mx-4">
       <!-- Business Strategy -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-          <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+          <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                   <circle cx="100" cy="100" r="75" fill="#10B981" />
                   <rect x="70" y="60" width="60" height="80" fill="#F9FAFB" />
@@ -287,7 +283,7 @@
 
       <!-- Market Research -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-          <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+          <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                   <circle cx="100" cy="100" r="75" fill="#10B981" />
                   <rect x="50" y="50" width="100" height="100" fill="#F9FAFB" />
@@ -301,7 +297,7 @@
 
       <!-- Project Management -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-          <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+          <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                   <circle cx="100" cy="100" r="75" fill="#10B981" />
                   <rect x="70" y="60" width="60" height="80" fill="#F9FAFB" />
@@ -314,7 +310,7 @@
 
       <!-- Risk Assessment -->
       <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-          <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative">
+          <div class="bg-white p-6 border-b-4 border-primary rounded-md shadow-lg flex flex-col items-center text-center relative">
               <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
                   <circle cx="100" cy="100" r="75" fill="#10B981" />
                   <rect x="50" y="50" width="100" height="100" fill="#F9FAFB" />
@@ -329,27 +325,25 @@
 </section>
 
 
-<section class="flex items-center  justify-center bg-gray-100 ">
-  <div class="w-full max-w-2xl rounded-xl py-16  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-primary mx-auto ">
-    <h3 class="text-4xl lg:text-5xl">
-      Is there a project within your scope of focus?
-      <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  Brief us in</span></span> 
-
-    </h3>
-    <p class="text-xl lg:text-2xl max-w-2xl mx-auto text-secondary leading-relaxed">
-      Let us establish a connection to explore how the expertise of the
-
-      <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  zngweb</span></span> 
-      team can transform your business vision into tangible reality.
-    </p>
-    <div class="relative">
-      <a href="/contact" class="flex sm:inline-flex rounded-md px-10 py-4 font-semibold shadow-sm hover:scale-105 focus-visible:outline focus-visible:outline-2 bg-main text-white hover:bg-yellow-200 focus-visible:outline-offset-2 focus-visible:outline-white ring-red-400 transition-all hover:ring-2  w-full text-center md:w-auto transition justify-center">
-        <span>Let's chat</span>
-        <svg class="h-6 w-6 ml-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
-        </svg>
-      </a>
-    </div>
-  </div>
-</section>
+<section class="flex items-center  justify-center bg-white">
+	<div class="w-full max-w-2xl rounded-xl py-20  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-secondary mx-auto ">
+	  <h2 class=" border-primary text-gray-700 text-4xl md:text-5xl font-medium leading-tight max-w-2xl mb-6 mb-0">
+		<span class="text-accent lowercase">     Is there a project within your scope of focus?</span><span class="text-primary">Brief us in</span> 
+	  </h2>
+	  <p class="text-xl lg:text-2xl max-w-2xl mx-auto text-colorary leading-relaxed">
+		Let us establish a connection to explore how the expertise of the
+  
+		<span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"><span class="relative text-white skew-y-3">  zngweb</span></span> 
+		team can transform your business vision into tangible reality.
+	  </p>
+	  <div class="relative">
+		<a href="/contact" class="flex sm:inline-flex rounded-md px-10 py-4 font-medium shadow-sm hover:scale-105 focus-visible:outline focus-visible:outline-2 bg-primary text-white hover:bg-secondary focus-visible:outline-offset-2 focus-visible:outline-white ring-white transition-all hover:ring-2  w-full text-center md:w-auto transition justify-center">
+		  <span>Let's chat</span>
+		  <svg class="h-6 w-6 ml-3 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+		  </svg>
+		</a>
+	  </div>
+	</div>
+  </section>
 

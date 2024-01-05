@@ -11,13 +11,12 @@
 
 	<div class="flex items-center space-x-4">
 		<a
-			href="/contact"
-			class="px-8 py-2 ml-1 flex hover:bg-yellow-200 text-white items-center justify-center  bg-main ring-red-400
-			transition-all hover:ring-2"
-	
-		>
-		Hire US
-	</a>
+  href="/contact"
+  class="px-6 py-2 ml-1 flex items-center justify-center bg-primary text-white rounded-md shadow-md transition-all hover:shadow-lg hover:bg-secondary"
+>
+  Hire Us
+</a>
+
 	</div>
 </nav>
 </div>
