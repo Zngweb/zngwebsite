@@ -20,6 +20,7 @@
       .then(() => {
         console.log('Form successfully submitted');
 		successMessage = 'Form submitted successfully!';
+		e.target.reset();
       })
       .catch((error) => alert(error));
   };
@@ -121,25 +122,28 @@
 						id="name"
 						name="name"
 						class="w-full border border-gray-300 p-2 rounded-md"
+						
 					/>
 				</div>
 		
 				<div class="mb-4">
-					<label for="email" class="block text-gray-600 text-sm font-semibold mb-1">Your Email:</label>
+					<label for="email" class="block text-gray-600 text-sm font-semibold mb-1">Your Email <span>*</span>:</label>
 					<input
 						type="email"
 						id="email"
 						name="email"
 						class="w-full border border-gray-300 p-2 rounded-md"
+						required
 					/>
 				</div>
 		
 				<div class="mb-4">
-					<label for="message" class="block text-gray-600 text-sm font-semibold mb-1">Message:</label>
+					<label for="message" class="block text-gray-600 text-sm font-semibold mb-1">Message <span>*</span>:</label>
 					<textarea
 						id="message"
 						name="message"
 						class="w-full border border-gray-300 p-2 rounded-md"
+						required
 					></textarea>
 				</div>
 		
