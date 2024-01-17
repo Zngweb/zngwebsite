@@ -128,7 +128,8 @@ onMount(() => {
   gtag('config', 'G-LTJB966L7N');
 </script>
 </svelte:head>
-<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
+
+<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8 div-with-pattern">
   <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200  sm:px-8">
     <!-- Left Column for Text -->
     <div class="lg:w-1/2 lg:pr-8">
@@ -138,23 +139,19 @@ onMount(() => {
       <h1 class="font-medium lowercases  pl-4 border-primary  pb-6 text-3xl md:text-4xl lg:text-5xl leading-none lg:leading-tight text-gray-700">
         digital agency expert on WordPress<span class="text-primary">.</span> 
       </h1>
-      
-   
-      
-      
       <h2 class="max-w-xl pb-6 text-lg lg:text-xl leading-7 lg:leading-9 text-colorary text-gray-700 pl-4">
         We specialize in delivering exceptional web development and design services tailored for small and mid-sized businesses, facilitating their growth through a harmonious blend of creativity and expertise. Our commitment is to provide enterprise-quality solutions that elevate your online presence and business success <span class="text-red">.</span>
       </h2>
     </div>
 
-<div class="lg:w-1/2   ">
+<div class="lg:w-1/2">
   <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
   <img src={hero} alt="zngweb hero section" class=" w-full h-auto ">
 </div>
   </div>
 </div>
 <!-- Desktop Section -->
-<div class="hidden md:flex w-full bg-white  slider-container">
+<div class="hidden md:flex w-full bg-gray-50  slider-container">
   <div class="w-1/2 relative overflow-hidden">
     {#each slides as slide, index (slide.id)}
       <div
@@ -366,7 +363,7 @@ onMount(() => {
 </section>
 
 
-<section class="flex items-center  justify-center bg-white">
+<section class="flex items-center  justify-center bg-white div-with-pattern">
 	<div class="w-full max-w-2xl rounded-xl py-20  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-secondary mx-auto ">
 	  <h2 class=" border-primary text-gray-700 text-4xl md:text-5xl font-medium leading-tight max-w-2xl mb-6 mb-0">
 		<span class="text-accent lowercase">     Is there a project within your scope of focus?</span><span class="text-primary">Brief us in</span> 

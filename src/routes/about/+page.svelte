@@ -58,17 +58,16 @@
 </script>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
+<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8 border-t border-gray-300">
   <div class="flex flex-col lg:flex-row w-full px-4 py-8 lg:py-16 border-gray-200  sm:px-8">
     <!-- Left Column for Text -->
     <div class="lg:w-1/2 lg:pr-8">
-      <h1 class="font-medium lowercases pb-6 text-3xl md:text-4xl lg:text-5xl leading-none lg:leading-tight">
-        <span class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500">
-          <span class="relative text-white skew-y-3">about</span>
-        </span> us.
+    
+      <h1 class="font-medium lowercases border-s-4 pl-4 border-primary  text-3xl md:text-4xl lg:text-5xl leading-none lg:leading-tight text-gray-700">
+        about <span class="text-primary p-1">us. </span>
       </h1>
 
-      <p class="text-gray-700 pb-6">
+      <p class="text-gray-700 pb-6 pt-6">
         At Zngweb, we firmly believe in empowering every business with a robust online presence. Our commitment is reflected in the exceptional web development and design services we offer to small and mid-sized enterprises, aiding in their growth. Passion drives our team, and we are dedicated to providing our clients with bespoke solutions that blend creativity and technical excellence at an enterprise level.
       </p>
 
@@ -83,7 +82,7 @@
     </div>
 
     <!-- Right Column for Image -->
-    <div class="lg:w-1/2 transform  ">
+    <div class="lg:w-1/2">
       <!-- Replace 'your-image-path.jpg' with the actual path to your image -->
       <img src={heroabout} alt="zngweb hero section" class=" w-full h-auto">
     </div>
@@ -108,7 +107,7 @@
     <div class="flex flex-wrap justify-around">
       {#each keyFactors as factor (factor.id)}
         <div class="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 px-4 mb-8">
-          <div class="bg-white p-6 rounded-md shadow-lg flex flex-col items-center text-center relative min-h-96">
+          <div class="bg-white p-6 border-b-4  border-primary   shadow-lg flex flex-col   relative">
             <svg fill="#EF4444" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g stroke-width="0"></g><g stroke-linecap="round" stroke-linejoin="round"></g><g ><path d="M19.965 8.521C19.988 8.347 20 8.173 20 8c0-2.379-2.143-4.288-4.521-3.965C14.786 2.802 13.466 2 12 2s-2.786.802-3.479 2.035C6.138 3.712 4 5.621 4 8c0 .173.012.347.035.521C2.802 9.215 2 10.535 2 12s.802 2.785 2.035 3.479A3.976 3.976 0 0 0 4 16c0 2.379 2.138 4.283 4.521 3.965C9.214 21.198 10.534 22 12 22s2.786-.802 3.479-2.035C17.857 20.283 20 18.379 20 16c0-.173-.012-.347-.035-.521C21.198 14.785 22 13.465 22 12s-.802-2.785-2.035-3.479zm-9.01 7.895-3.667-3.714 1.424-1.404 2.257 2.286 4.327-4.294 1.408 1.42-5.749 5.706z"></path></g></svg>
         
             <h3 class="text-xl font-bold mb-4  overflow-hidden">{factor.title}</h3>
@@ -152,7 +151,7 @@
 </div>
 
 
-<section class="flex items-center  justify-center bg-white">
+<section class="flex items-center  justify-center bg-white div-with-pattern">
 	<div class="w-full max-w-2xl rounded-xl py-20  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-secondary mx-auto ">
 	  <h2 class=" border-primary text-gray-700 text-4xl md:text-5xl font-medium leading-tight max-w-2xl mb-6 mb-0">
 		<span class="text-accent lowercase">     Is there a project within your scope of focus?</span><span class="text-primary">Brief us in</span> 

@@ -86,7 +86,10 @@ module.exports = {
         'secondary':'#2C3E50',
         'accent-color':'#FF6F61',
         'bgcolor':'#F5F5F5',
-        'text-color':'#333333'
+        'text-color':'#333333',
+        'wordpress-blue':'#00749C',
+        'wordpress-dark':'#444140',
+        'darkblue':'#0C2A31'
       },
       minHeight: {
         "screen-75": "75vh",

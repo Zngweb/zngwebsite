@@ -38,7 +38,6 @@
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={`Contact Us | ${SITE_TITLE}`} />
-	<meta property="og:description" content={SITE_DESCRIPTION} />
 	<meta property="og:url" content={`${SITE_URL}/contact`} />
 	<meta property="og:site_name" content={SITE_TITLE} />
 	<meta property="og:image" content={DEFAULT_OG_IMAGE} />
@@ -65,7 +64,7 @@
 </script>
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8">
+<div class="flex flex-col items-center justify-center max-w-7xl mx-auto lg:px-8 border-t border-gray-300">
 	<div
 		class="flex flex-col lg:flex-row w-full px-4 py-16 border-gray-200 sm:px-8"
 	>

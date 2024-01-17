@@ -8,8 +8,15 @@
 		<link rel="manifest" href="%sveltekit.assets%/site.webmanifest">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
+		<style>
+.div-with-pattern { 
+  background-image: linear-gradient(to right, rgb(244, 240, 240) 1px, transparent 1px), linear-gradient(to bottom, rgb(244, 240, 240) 1px, transparent 1px); 
+  background-size: 100px 100px; 
+  background-position: 0 0, 0 0; 
+} 
+		</style>
 	</head>
-	<body data-sveltekit-preload-data="hover" class="bg-bgcolor">
+	<body data-sveltekit-preload-data="hover" class="bg-white " >
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

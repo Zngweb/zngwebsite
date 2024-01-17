@@ -2,15 +2,15 @@ import { SITE_URL } from '$lib/siteConfig';
 
 /** @type {import('@sveltejs/kit').RequestHandler} */
 export async function GET() {
-	const pages = [`about`,`services`,`contact`];
-	const body = sitemap(pages);
+  const pages = ['about', 'services', 'contact', 'wordpress-website-design', 'custom-wordpress-theme-development', 'plugin-development-and-integration', 'wordpress-maintenance-and-support', 'api-integration-with-wordpress', 'e-commerce-development-with-woocommerce', 'headless-wordpress-development', 'custom-gutenberg-block-development'];
+  const body = sitemap(pages);
 
-	return new Response(body, {
-		headers: {
+  return new Response(body, {
+    headers: {
       'Cache-Control': `public, max-age=${86400}`, // 24 hours
-			'Content-Type': 'application/xml'
-		}
-	});
+      'Content-Type': 'application/xml',
+    },
+  });
 }
 
 const sitemap = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
@@ -28,14 +28,14 @@ const sitemap = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
       <priority>0.9</priority>
     </url>
     ${pages
-			.map(
-				(page,index) => `
+      .map(
+        (page, index) => `
     <url>
       <loc>${SITE_URL}/${page}</loc>
       <changefreq>daily</changefreq>
       <priority>${0.5 + 0.1 * index}</priority>
     </url>
     `
-			)
-			.join('')}
+      )
+      .join('')}
   </urlset>`;
