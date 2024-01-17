@@ -62,7 +62,7 @@
 	  left: 0;
 	  transition: opacity 300ms ease, transform 300ms ease;
 	  transform: translateY(-100%);
-	  margin-top: 40px;
+	  margin-top: 30px;
 	}
   
 	.menu li {
