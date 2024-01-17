@@ -1,4 +1,5 @@
 <script>
+  import { page } from '$app/stores';
     import { SITE_URL, SITE_TITLE, DEFAULT_OG_IMAGE } from '$lib/siteConfig';
 	let services = [
     {
@@ -144,7 +145,7 @@
 		{#each services as service (service.title)}
 		  <div class="flex items-center">
 			<span class="text-lg border border-primary bg-primary rounded-full text-gray-700 p-2 mr-2" role="img">{service.icon}</span>
-			<a href={service.link} class="text-gray-700 hover:text-primary transition-all">{service.shortTitle}</a>
+			<a href={service.link} class="text-gray-700 hover:text-primary transition-all" class:text-primary={$page.url.pathname ===`/${service.link}`}>{service.shortTitle}</a>
 		  </div>
 		{/each}
 	  </div>

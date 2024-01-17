@@ -294,78 +294,59 @@
 </section>
 
 
-<section class="container mx-auto md:px-4 md:pb-20 ">
+<section class="container mx-auto md:px-4 md:py-20 ">
   <div class="md:p-6 p-4 w-full">
     <h2 class="border-s-4 pl-4 border-primary text-gray-700 text-4xl md:text-5xl font-medium leading-tight max-w-2xl mb-6 mb-0">
       <span class="text-accent lowercase">Professional Consulting</span><span class="text-primary">.</span> 
     </h2>
     
     <p class="pl-4 md:pl-6 pb-6 md:pb-10 text-base md:text-xl leading-6 md:leading-9 text-gray-700">
-      Elevate your business strategy with our professional consulting services. We provide tailored guidance and solutions to help you overcome challenges, optimize processes, and achieve your business objectives.    </p>
+      Elevate your business strategy with our professional consulting services. We provide tailored guidance and solutions to help you overcome challenges, optimize processes, and achieve your business objectives.  
+    </p>
   </div>
-  <div class="flex flex-wrap -mx-4">
-    <!-- Business Strategy -->
+  
+
+  <div class="flex flex-wrap ">
+    <!-- Web Development -->
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 border-b-4 border-primary  shadow-lg flex flex-col items-center text-center relative">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="75" fill="#10B981" />
-                <rect x="70" y="60" width="60" height="80" fill="#F9FAFB" />
-                <line x1="70" y1="80" x2="130" y2="80" stroke="#4B5563" stroke-width="5" />
-                <line x1="70" y1="95" x2="130" y2="95" stroke="#4B5563" stroke-width="5" />
-                <line x1="70" y1="110" x2="130" y2="110" stroke="#4B5563" stroke-width="5" />
-            </svg>
-            <h3 class="text-xl font-bold mb-4 ">Business Strategy</h3>
-            <p class="text-gray-700">Strategic planning and execution to drive business growth and profitability.</p>
-        </div>
+      <div class="bg-white p-6 border-b-4  border-primary   shadow-lg flex flex-col   relative">
+        
+        <h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent  ">Business Strategy</span></h3>
+        <p class="text-gray-700">Crafting dynamic and responsive websites with the latest technologies.</p>
+     
+      </div>
     </div>
 
-    <!-- Market Research -->
+    <!-- Design Services -->
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 border-b-4 border-secondary shadow-lg flex flex-col items-center text-center relative">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="75" fill="#10B981" />
-                <rect x="50" y="50" width="100" height="100" fill="#F9FAFB" />
-                <line x1="50" y1="50" x2="150" y2="150" stroke="#4B5563" stroke-width="5" />
-                <line x1="150" y1="50" x2="50" y2="150" stroke="#4B5563" stroke-width="5" />
-            </svg>
-            <h3 class="text-xl font-bold mb-4 ">Market Research</h3>
-            <p class="text-gray-700">In-depth analysis and insights to make informed business decisions.</p>
-        </div>
+      <div class="bg-white p-6 border-b-4 border-secondary   shadow-lg flex flex-col  relative">
+        <h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent ">Market Research</span></h3>
+       
+        <p class="text-gray-700">In-depth analysis and insights to make informed business decisions.</p>
+    
+      </div>
     </div>
 
-    <!-- Project Management -->
+    <!-- WordPress Expertise -->
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 border-b-4 border-primary  shadow-lg flex flex-col items-center text-center relative">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="75" fill="#10B981" />
-                <rect x="70" y="60" width="60" height="80" fill="#F9FAFB" />
-                <rect x="50" y="95" width="100" height="10" fill="#4B5563" />
-            </svg>
-            <h3 class="text-xl font-bold mb-4 ">Project Management</h3>
-            <p class="text-gray-700">Efficient project planning, coordination, and execution for successful outcomes.</p>
-        </div>
+      <div class="bg-white p-6 border-b-4 border-primary   shadow-lg flex flex-col  relative">
+
+        <h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent ">Project Management</span></h3>
+        <p class="text-gray-700">Efficient project planning, coordination, and execution for successful outcomes.</p>
+     
+      </div>
     </div>
 
-    <!-- Risk Assessment -->
+    <!-- Business Growth -->
     <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4 mb-8">
-        <div class="bg-white p-6 border-b-4 border-secondary  shadow-lg flex flex-col items-center text-center relative">
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 200 200">
-                <circle cx="100" cy="100" r="75" fill="#10B981" />
-                <rect x="50" y="50" width="100" height="100" fill="#F9FAFB" />
-                <line x1="50" y1="100" x2="150" y2="100" stroke="#4B5563" stroke-width="5" />
-                <line x1="100" y1="50" x2="100" y2="150" stroke="#4B5563" stroke-width="5" />
-            </svg>
-            <h3 class="text-xl font-bold mb-4 ">Risk Assessment</h3>
-            <p class="text-gray-700">Identifying and mitigating potential risks to ensure business continuity.</p>
-        </div>
+      <div class="bg-white p-6 border-b-4 border-secondary  shadow-lg flex flex-col  relative">
+        <h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent ">Risk Assessment</span></h3>
+        <p class="text-gray-700">Identifying and mitigating potential risks to ensure business continuity.</p>
+    
+      </div>
     </div>
-</div>
-
-
+  </div>
 </section>
-
-
-
 
 <section class="flex items-center  justify-center bg-white div-with-pattern">
 	<div class="w-full max-w-2xl rounded-xl py-20  px-6 sm:pb-24 lg:px-8 text-center space-y-10 text-secondary mx-auto ">
@@ -388,4 +369,3 @@
 	  </div>
 	</div>
   </section>
-

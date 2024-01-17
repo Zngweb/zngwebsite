@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	// make dynamic date to be added to footer
 	let date = new Date().getFullYear();
   
@@ -26,6 +27,7 @@
 			  <a
 				href="/"
 				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
+				class:text-primary={$page.url.pathname ===`/`}
 			  >
 				Home
 			  </a>
@@ -34,6 +36,7 @@
 			  <a
 				href="/about"
 				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
+				class:text-primary={$page.url.pathname ===`/about`}
 			  >
 				About Us
 			  </a>
@@ -42,6 +45,7 @@
 			  <a
 				href="/services"
 				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
+				class:text-primary={$page.url.pathname ===`/services`}
 			  >
 				Services
 			  </a>
@@ -50,6 +54,7 @@
 			  <a
 				href="/contact"
 				class="text-gray-800 hover:text-primary text-sm font-semibold block py-1 px-3"
+				class:text-primary={$page.url.pathname ===`/contact`}
 			  >
 				Contact
 			  </a>
