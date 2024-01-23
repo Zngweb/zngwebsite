@@ -33,9 +33,9 @@ const sitemap = (pages) => `<?xml version="1.0" encoding="UTF-8" ?>
     <url>
       <loc>${SITE_URL}/${page}</loc>
       <changefreq>daily</changefreq>
-      <priority>${0.5 + 0.1 * index}</priority>
+      <priority>${(1 - index / (pages.length - 1)).toFixed(2)}</priority>
     </url>
     `
       )
-      .join('')}
+      .join('')}    
   </urlset>`;
