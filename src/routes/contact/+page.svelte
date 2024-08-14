@@ -79,11 +79,7 @@
 				Whether you're exploring ideas, weighing options, or ready to dive in, we're eager to hear about your goals. Let's craft something remarkable together!
 			</p>
 
-			<h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent ">Connect with us using the form  or drop us an email at</span> <a href="mailto:contact@zngweb.com" class="text-accent hover:text-accent-hover">
-					
-					
-				contact@zngweb.com
-			</a>.</h3>
+			<h3 class="border-s-2 border-primary pl-2 text-xl font-medium mb-4 text-gray-700"><span class="text-accent ">Connect with us using the form.</span>.</h3>
 			
 		</div>
 		
